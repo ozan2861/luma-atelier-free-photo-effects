@@ -1,0 +1,714 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "portrait",
+  "label": "Portre",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "soft-portrait",
+      "name": "Soft Portrait",
+      "category": "portrait",
+      "description": "Salt yumusaklik: belirgin diffusion, acik golge, renk oldugu gibi. Ten rengi araligini koruyan reçetedir; cilt rotusu yapmaz.",
+      "intent": "Portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.diffusion",
+            "instance": "c167afd07a76",
+            "params": {
+              "strength": 52.0,
+              "radius": 75.0,
+              "lift": 30.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "41c75ecc96ca",
+            "params": {
+              "shadows": 26.0,
+              "highlights": -18.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "bba922aec004",
+            "params": {
+              "lift": 10.0,
+              "rolloff": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "a07d784643d2",
+            "params": {
+              "amount": 12.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "warm-skin",
+      "name": "Warm Skin",
+      "category": "portrait",
+      "description": "Sicak ten / serin cevre ayrimi: golgeler maviye kayar, ten sicakligini korur.",
+      "intent": "Portre, gun batimi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "2155de2a66ab",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 20.0,
+              "orange_lum": 10.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": -16.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -28.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "fc7b34f56231",
+            "params": {
+              "shadow_color": [
+                0.38,
+                0.45,
+                0.62
+              ],
+              "shadow_amount": 42.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.52,
+                0.5,
+                0.48
+              ],
+              "highlight_amount": 12.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "9d8f65e68dff",
+            "params": {
+              "amount": 14.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "cool-editorial",
+      "name": "Cool Editorial",
+      "category": "portrait",
+      "description": "Serin golgeler ve dusuk doygunluk; dergi sayfasi karakteri.",
+      "intent": "Moda, editoryal portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "64341a326fcd",
+            "params": {
+              "kelvin": 6213.2,
+              "tint": -8.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "172ae7a2427c",
+            "params": {
+              "amount": -16.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "06a85e58de10",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0.02
+                ],
+                [
+                  0.3,
+                  0.27
+                ],
+                [
+                  0.7,
+                  0.74
+                ],
+                [
+                  1,
+                  0.98
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "87b614940136",
+            "params": {
+              "amount": 12.0,
+              "radius": 45.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "matte-portrait",
+      "name": "Matte Portrait",
+      "category": "portrait",
+      "description": "Sicak mat baski: kalkik siyahlar kahverengiye, parlak alanlar kreme calar.",
+      "intent": "Portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.fade",
+            "instance": "98c386e5c540",
+            "params": {
+              "lift": 34.0,
+              "rolloff": 16.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.split_tone",
+            "instance": "bdd4290362f1",
+            "params": {
+              "shadow_color": [
+                0.42,
+                0.36,
+                0.3
+              ],
+              "shadow_strength": 40.0,
+              "highlight_color": [
+                0.97,
+                0.91,
+                0.8
+              ],
+              "highlight_strength": 30.0,
+              "balance": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "a56408fceccd",
+            "params": {
+              "amount": -6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "beauty-glow",
+      "name": "Beauty Glow",
+      "category": "portrait",
+      "description": "Parlak alanlardan yayilan yumusak isilti; kontrast dusurulur.",
+      "intent": "Guzellik, yakin portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.bloom",
+            "instance": "629c3e310b7c",
+            "params": {
+              "threshold": 0.58,
+              "radius": 110.0,
+              "intensity": 42.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "44a23302706d",
+            "params": {
+              "strength": 30.0,
+              "radius": 60.0,
+              "lift": 28.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "6d7c6c9c50a7",
+            "params": {
+              "amount": -12.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "low-key-portrait",
+      "name": "Low Key Portrait",
+      "category": "portrait",
+      "description": "Koyu, derin golgeler; yalnizca isik alan yuzey one cikar.",
+      "intent": "Studyo, koyu zemin",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.curves",
+            "instance": "45365bbd1112",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.35,
+                  0.22
+                ],
+                [
+                  0.75,
+                  0.82
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "bd2a52eaaecf",
+            "params": {
+              "shadows": -24.0,
+              "highlights": -8.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "603131b54d67",
+            "params": {
+              "amount": -38.0,
+              "midpoint": 0.5,
+              "feather": 0.85,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "84f2fa32ea7c",
+            "params": {
+              "amount": -8.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "high-key-portrait",
+      "name": "High Key Portrait",
+      "category": "portrait",
+      "description": "Aydinlik ve temiz; golgeler neredeyse kalkar.",
+      "intent": "Beyaz zemin, studyo",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "425a67256ccd",
+            "params": {
+              "shadows": 46.0,
+              "highlights": -40.0
+            }
+          },
+          {
+            "op": "tone.exposure",
+            "instance": "30be345583bb",
+            "params": {
+              "stops": 0.3
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "3f925c68de41",
+            "params": {
+              "lift": 10.0,
+              "rolloff": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "d99902680b6b",
+            "params": {
+              "amount": -12.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "70a344b21e41",
+            "params": {
+              "strength": 18.0,
+              "radius": 45.0,
+              "lift": 24.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "golden-skin",
+      "name": "Golden Skin",
+      "category": "portrait",
+      "description": "Bakir ten: sicaklik yalnizca ten renk araliginda, arka plan oldugu gibi kalir.",
+      "intent": "Altin saat portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "2d8017adbe2a",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 20.0,
+              "red_lum": 8.0,
+              "orange_hue": -6.0,
+              "orange_sat": 30.0,
+              "orange_lum": 14.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 12.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "6597f2563f4f",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.6,
+                0.51,
+                0.42
+              ],
+              "midtone_amount": 24.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "46231cb4c885",
+            "params": {
+              "shadows": 16.0,
+              "highlights": -20.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "c1a800e53ab8",
+            "params": {
+              "amount": 10.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "pastel-portrait",
+      "name": "Pastel Portrait",
+      "category": "portrait",
+      "description": "Dusuk doygunluk ve acik tonlar; yumusak pastel palet.",
+      "intent": "Cocuk, aile",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.saturation",
+            "instance": "1b196f8c3ce4",
+            "params": {
+              "amount": -24.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "28e2e107c1e2",
+            "params": {
+              "lift": 22.0,
+              "rolloff": 10.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "9d4939e2da1a",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.55,
+                0.51,
+                0.53
+              ],
+              "midtone_amount": 20.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "ca8b8e6d2bfd",
+            "params": {
+              "strength": 16.0,
+              "radius": 40.0,
+              "lift": 18.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "crisp-editorial",
+      "name": "Crisp Editorial",
+      "category": "portrait",
+      "description": "Net, kontrastli ve renk dengesi kontrollu; is portresi icin.",
+      "intent": "Kurumsal portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "detail.sharpen",
+            "instance": "a914a014d450",
+            "params": {
+              "amount": 95.0,
+              "radius": 1.1,
+              "threshold": 3.0,
+              "protect_highlights": true
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "30631bf66a9e",
+            "params": {
+              "amount": 24.0,
+              "radius": 50.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "b58dcdc44c87",
+            "params": {
+              "amount": 20.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "6d2d2bc62d47",
+            "params": {
+              "amount": 8.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,769 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "mono",
+  "label": "Siyah-beyaz",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "classic-mono",
+      "name": "Classic Mono",
+      "category": "mono",
+      "description": "Klasik siyah-beyaz: dengeli kanal karisimi, orta kontrast.",
+      "intent": "Her tur fotograf",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "47abde0d60cf",
+            "params": {
+              "red": 10.0,
+              "orange": 12.0,
+              "yellow": 0.0,
+              "green": -6.0,
+              "aqua": 0.0,
+              "blue": -14.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "588d7aa96ed5",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.28,
+                  0.24
+                ],
+                [
+                  0.72,
+                  0.78
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "9a8e1baf6406",
+            "params": {
+              "amount": 22.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "fine-art-mono",
+      "name": "Fine Art Mono",
+      "category": "mono",
+      "description": "Genis ton araligi ve yumusak gecisler; galeri baskisi icin.",
+      "intent": "Sergi baskisi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "f378556fbaa7",
+            "params": {
+              "red": 0.0,
+              "orange": 0.0,
+              "yellow": 10.0,
+              "green": 6.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "7602512cec67",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0.02
+                ],
+                [
+                  0.25,
+                  0.24
+                ],
+                [
+                  0.75,
+                  0.78
+                ],
+                [
+                  1,
+                  0.98
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "f2ef1d00f539",
+            "params": {
+              "amount": 14.0,
+              "radius": 90.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "high-contrast-mono",
+      "name": "High Contrast Mono",
+      "category": "mono",
+      "description": "Sert siyah-beyaz ayrim; ara tonlar azalir.",
+      "intent": "Grafik, mimari",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "505d2242f2c0",
+            "params": {
+              "red": 12.0,
+              "orange": 0.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": -16.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "fd6063aae519",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.3,
+                  0.14
+                ],
+                [
+                  0.7,
+                  0.88
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "d53323e30cbd",
+            "params": {
+              "amount": 26.0,
+              "radius": 50.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "soft-silver",
+      "name": "Soft Silver",
+      "category": "mono",
+      "description": "Yumusak gumus tonu; golgeler acik, parlak alanlar kontrollu.",
+      "intent": "Portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "86961aca4ee6",
+            "params": {
+              "red": 0.0,
+              "orange": 12.0,
+              "yellow": 8.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "108592d5f4e5",
+            "params": {
+              "shadows": 22.0,
+              "highlights": -18.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "210c3751b5c7",
+            "params": {
+              "amount": -6.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "6ace15f2dbf3",
+            "params": {
+              "strength": 16.0,
+              "radius": 45.0,
+              "lift": 20.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "matte-mono",
+      "name": "Matte Mono",
+      "category": "mono",
+      "description": "Mat siyah-beyaz: siyahlar kalkik, cagdas gorunum.",
+      "intent": "Sokak, gunluk",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "4c4bcde00569",
+            "params": {
+              "red": 0.0,
+              "orange": 0.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "2f98a1b593a4",
+            "params": {
+              "lift": 32.0,
+              "rolloff": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "7e5aafbb9fdf",
+            "params": {
+              "amount": 18.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "deep-noir",
+      "name": "Deep Noir",
+      "category": "mono",
+      "description": "Derin siyahlar ve sert isik; film noir karakteri.",
+      "intent": "Gece, portre, gerilim",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "e10a1be61195",
+            "params": {
+              "red": 14.0,
+              "orange": 0.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": -20.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "54a89693e79a",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.38,
+                  0.16
+                ],
+                [
+                  0.78,
+                  0.86
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "992cbe52fca3",
+            "params": {
+              "amount": -42.0,
+              "midpoint": 0.52,
+              "feather": 0.8,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "175aaa4d3922",
+            "params": {
+              "amount": 26.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "infrared-mono",
+      "name": "Infrared Inspired Mono",
+      "category": "mono",
+      "description": "Kizilotesi *esinli* yorum: yesiller parlar, gokyuzu koyulur. Gercek kizilotesi veri uretmez; kanal karisimiyla elde edilir.",
+      "intent": "Manzara, bitki ortusu",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.channel_mixer",
+            "instance": "b2fd27452c7a",
+            "params": {
+              "rr": 60.0,
+              "rg": 120.0,
+              "rb": -40.0,
+              "gr": 40.0,
+              "gg": 110.0,
+              "gb": -30.0,
+              "br": 30.0,
+              "bg": 90.0,
+              "bb": -10.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.monochrome",
+            "instance": "746cef080fb2",
+            "params": {
+              "red": 0.0,
+              "orange": 0.0,
+              "yellow": 24.0,
+              "green": 40.0,
+              "aqua": 0.0,
+              "blue": -34.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "111d7b30bf32",
+            "params": {
+              "amount": 26.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "95f1fedd2316",
+            "params": {
+              "threshold": 0.7,
+              "radius": 80.0,
+              "intensity": 30.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "grainy-reportage",
+      "name": "Grainy Reportage",
+      "category": "mono",
+      "description": "Yuksek ISO haber fotografi: belirgin tane, sert kontrast.",
+      "intent": "Haber, belgesel",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "74217ac8485a",
+            "params": {
+              "red": 8.0,
+              "orange": 0.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "694ed7381c7c",
+            "params": {
+              "amount": 62.0,
+              "size": 2.8,
+              "roughness": 70.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "9cee51f56d7a",
+            "params": {
+              "amount": 28.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "68d4e13efcf4",
+            "params": {
+              "amount": 22.0,
+              "radius": 55.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "high-key-mono",
+      "name": "High Key Mono",
+      "category": "mono",
+      "description": "Aydinlik siyah-beyaz; golgeler minimumda.",
+      "intent": "Portre, studyo",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "ee701cc7fd7a",
+            "params": {
+              "red": 0.0,
+              "orange": 0.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.exposure",
+            "instance": "85b553eb0556",
+            "params": {
+              "stops": 0.4
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "ebcc17393cc5",
+            "params": {
+              "shadows": 40.0,
+              "highlights": -20.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "013e8167e055",
+            "params": {
+              "amount": -14.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "warm-selenium",
+      "name": "Warm Selenium",
+      "category": "mono",
+      "description": "Selenyum tonlamasi: sicak golgeler, serin parlak alanlar.",
+      "intent": "Baski, portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "8c55a95011d7",
+            "params": {
+              "red": 0.0,
+              "orange": 10.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.split_tone",
+            "instance": "acff06ee2816",
+            "params": {
+              "shadow_color": [
+                0.44,
+                0.34,
+                0.3
+              ],
+              "shadow_strength": 32.0,
+              "highlight_color": [
+                0.86,
+                0.9,
+                0.96
+              ],
+              "highlight_strength": 24.0,
+              "balance": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "fa6b64e12279",
+            "params": {
+              "amount": 14.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

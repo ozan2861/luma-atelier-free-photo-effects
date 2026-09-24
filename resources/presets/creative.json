@@ -1,0 +1,787 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "creative",
+  "label": "Yaratıcı renk",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "cyan-orange",
+      "name": "Cyan Orange",
+      "category": "creative",
+      "description": "Klasik tamamlayici renk ayrimi: cyan golge, turuncu ten.",
+      "intent": "Aksiyon, portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "c4a52e8345b2",
+            "params": {
+              "shadow_color": [
+                0.34,
+                0.52,
+                0.6
+              ],
+              "shadow_amount": 42.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.66,
+                0.52,
+                0.38
+              ],
+              "highlight_amount": 38.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "671d924c2978",
+            "params": {
+              "amount": 20.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "3e85516cd091",
+            "params": {
+              "amount": 16.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "purple-dream",
+      "name": "Purple Dream",
+      "category": "creative",
+      "description": "Mor ve lila kayma; ruya gibi bir renk dunyasi.",
+      "intent": "Moda, gece",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "765a0198378f",
+            "params": {
+              "shadow_color": [
+                0.46,
+                0.38,
+                0.62
+              ],
+              "shadow_amount": 40.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.62,
+                0.5,
+                0.64
+              ],
+              "highlight_amount": 30.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "03464c8051d6",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 16.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 24.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 18.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "26853c258d10",
+            "params": {
+              "threshold": 0.66,
+              "radius": 110.0,
+              "intensity": 34.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "duotone-ink",
+      "name": "Duotone Ink",
+      "category": "creative",
+      "description": "Iki renkli baski: lacivert golge, krem parlak alan.",
+      "intent": "Afis, grafik",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "style.duotone",
+            "instance": "7980991fb687",
+            "params": {
+              "shadow_color": [
+                0.08,
+                0.12,
+                0.3
+              ],
+              "highlight_color": [
+                0.98,
+                0.9,
+                0.68
+              ],
+              "balance": 0.0,
+              "contrast": 18.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "crimson-shadows",
+      "name": "Crimson Shadows",
+      "category": "creative",
+      "description": "Kirmizi golgeler ve koyu atmosfer.",
+      "intent": "Gerilim, gece",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "a7738571f6dd",
+            "params": {
+              "shadow_color": [
+                0.62,
+                0.36,
+                0.38
+              ],
+              "shadow_amount": 40.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.54,
+                0.5,
+                0.48
+              ],
+              "highlight_amount": 18.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "1513a5e3eb6e",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.35,
+                  0.22
+                ],
+                [
+                  0.75,
+                  0.82
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "7ae4266b4d11",
+            "params": {
+              "amount": -30.0,
+              "midpoint": 0.58,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "mint-pastel",
+      "name": "Mint Pastel",
+      "category": "creative",
+      "description": "Nane yesili pastel palet; temiz ve modern.",
+      "intent": "Urun, minimal",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.saturation",
+            "instance": "eb77c136f4ea",
+            "params": {
+              "amount": -34.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "14975db04961",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": -26.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -30.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 24.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 20.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "afda20ee36a2",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.4,
+                0.58,
+                0.52
+              ],
+              "midtone_amount": 38.0,
+              "highlight_color": [
+                0.5,
+                0.57,
+                0.54
+              ],
+              "highlight_amount": 26.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "76578a19e979",
+            "params": {
+              "lift": 24.0,
+              "rolloff": 10.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "peach-fade",
+      "name": "Peach Fade",
+      "category": "creative",
+      "description": "Belirgin seftali kaymasi: parlak alanlar mercan, golgeler sicak krem. Yaz portrelerinin nostaljik tonu.",
+      "intent": "Portre, yaz",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "6d9b24379085",
+            "params": {
+              "shadow_color": [
+                0.58,
+                0.48,
+                0.44
+              ],
+              "shadow_amount": 30.0,
+              "midtone_color": [
+                0.62,
+                0.5,
+                0.46
+              ],
+              "midtone_amount": 26.0,
+              "highlight_color": [
+                0.78,
+                0.48,
+                0.4
+              ],
+              "highlight_amount": 54.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "92b345ada28b",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 14.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 22.0,
+              "orange_lum": 8.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "846125161c8b",
+            "params": {
+              "lift": 30.0,
+              "rolloff": 16.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "0b101b822243",
+            "params": {
+              "amount": -8.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "electric-blue",
+      "name": "Electric Blue",
+      "category": "creative",
+      "description": "Elektrik mavisi vurgusu ve yuksek doygunluk.",
+      "intent": "Gece, moda",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "24d4f24cfb4d",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -14.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 26.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 40.0,
+              "blue_lum": 8.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "be7d7649a878",
+            "params": {
+              "shadow_color": [
+                0.32,
+                0.42,
+                0.7
+              ],
+              "shadow_amount": 44.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "9c9cee161995",
+            "params": {
+              "amount": 22.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "2a39fd31bd9c",
+            "params": {
+              "amount": 18.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "copper-teal",
+      "name": "Copper Teal",
+      "category": "creative",
+      "description": "Abartili bakir-turkuaz: metalik sicak parlak alan, derin turkuaz golge.",
+      "intent": "Yaratici portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "c596fd3a9f53",
+            "params": {
+              "shadow_color": [
+                0.22,
+                0.54,
+                0.6
+              ],
+              "shadow_amount": 62.0,
+              "midtone_color": [
+                0.58,
+                0.48,
+                0.4
+              ],
+              "midtone_amount": 30.0,
+              "highlight_color": [
+                0.8,
+                0.48,
+                0.22
+              ],
+              "highlight_amount": 58.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "8d04c09fd072",
+            "params": {
+              "toe": 22.0,
+              "shoulder": 30.0,
+              "pivot": 0.45,
+              "strength": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "2ea8a300da9f",
+            "params": {
+              "amount": 14.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "selective-red",
+      "name": "Selective Red",
+      "category": "creative",
+      "description": "Kirmizi disindaki renkleri geri ceker. Renk araligi maskesiyle calisir; nesne tanima yapmaz.",
+      "intent": "Vurgu, grafik",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "a1f685521716",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 30.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -70.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": -80.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": -90.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": -90.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -85.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": -60.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "06799498c87d",
+            "params": {
+              "amount": 16.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "muted-olive",
+      "name": "Muted Olive",
+      "category": "creative",
+      "description": "Sessiz zeytin paleti; dusuk doygunluk, toprak kayma.",
+      "intent": "Doga, moda",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "665f4338366f",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": -10.0,
+              "yellow_sat": -18.0,
+              "yellow_lum": 0.0,
+              "green_hue": 16.0,
+              "green_sat": -26.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "c254f0a58e8e",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.5,
+                0.52,
+                0.44
+              ],
+              "midtone_amount": 28.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "a044d38fa9c4",
+            "params": {
+              "amount": -20.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "0472895a5cab",
+            "params": {
+              "lift": 14.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

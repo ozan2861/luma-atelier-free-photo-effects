@@ -1,0 +1,489 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "texture",
+  "label": "Doku ve stil",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "paper-print",
+      "name": "Paper Print",
+      "category": "texture",
+      "description": "Kagida basilmis his: lif dokusu ve hafif sicaklik.",
+      "intent": "Baski taklidi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.paper",
+            "instance": "af01f690d183",
+            "params": {
+              "strength": 44.0,
+              "scale": 5.0,
+              "fibre": 62.0,
+              "warmth": 22.0,
+              "seed": 4,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "fc73e005fbf2",
+            "params": {
+              "lift": 12.0,
+              "rolloff": 6.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "698e8769ec89",
+            "params": {
+              "amount": -10.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "fine-grain",
+      "name": "Fine Grain",
+      "category": "texture",
+      "description": "Ince, sik tane; gorunumu bozmadan film hissi verir.",
+      "intent": "Portre, dusuk ISO film",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.grain",
+            "instance": "8d69282661a2",
+            "params": {
+              "amount": 30.0,
+              "size": 1.4,
+              "roughness": 34.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "5e2c5db5ae9b",
+            "params": {
+              "amount": 10.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "rough-grain",
+      "name": "Rough Grain",
+      "category": "texture",
+      "description": "Iri ve sert tane; ham ve dogrudan bir his.",
+      "intent": "Belgesel, yuksek ISO",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.grain",
+            "instance": "0a0f41328f6f",
+            "params": {
+              "amount": 70.0,
+              "size": 4.2,
+              "roughness": 78.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "546c6e67e3da",
+            "params": {
+              "amount": 18.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "f7b44c17357f",
+            "params": {
+              "amount": -14.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "dust-scratches",
+      "name": "Dust & Scratches",
+      "category": "texture",
+      "description": "Toz benekleri ve dikey cizikler; arsiv gorunumu.",
+      "intent": "Eski film taramasi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.dust",
+            "instance": "08ace52fd940",
+            "params": {
+              "dust": 52.0,
+              "scratches": 42.0,
+              "dust_size": 3.0,
+              "dark_ratio": 55.0,
+              "seed": 2,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "b87ca4cc8cec",
+            "params": {
+              "amount": 24.0,
+              "size": 2.4,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "6f8d4a699cd6",
+            "params": {
+              "lift": 16.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "soft-focus",
+      "name": "Soft Focus",
+      "category": "texture",
+      "description": "Yumusak odak: net katman uzerinde bulanik katman.",
+      "intent": "Portre, cicek",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.diffusion",
+            "instance": "cb8678a278a5",
+            "params": {
+              "strength": 58.0,
+              "radius": 70.0,
+              "lift": 26.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "blur.gaussian",
+            "instance": "cc875994b6ee",
+            "params": {
+              "radius": 14.0,
+              "amount": 28.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "2fa80ace4af4",
+            "params": {
+              "amount": -8.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "tilt-shift-miniature",
+      "name": "Tilt Shift Miniature",
+      "category": "texture",
+      "description": "Minyatur etkisi: dar net serit, guclu doygunluk.",
+      "intent": "Sehir, yuksekten",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "blur.tilt_shift",
+            "instance": "b39534e22bae",
+            "params": {
+              "radius": 60.0,
+              "position": 0.55,
+              "width": 0.22,
+              "feather": 0.16,
+              "angle": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "314470169f35",
+            "params": {
+              "amount": 34.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "3812d5793000",
+            "params": {
+              "amount": 20.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "chromatic-fringe",
+      "name": "Chromatic Fringe",
+      "category": "texture",
+      "description": "Kenarlarda renk ayrilmasi; oyuncakli lens hissi.",
+      "intent": "Yaratici, lo-fi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "lens.chromatic_aberration",
+            "instance": "06145af71f49",
+            "params": {
+              "amount": 55.0,
+              "edge_only": true
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "dc2a07fecee6",
+            "params": {
+              "amount": -24.0,
+              "midpoint": 0.6,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "a3b369f9a16c",
+            "params": {
+              "amount": 16.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "poster-art",
+      "name": "Poster Art",
+      "category": "texture",
+      "description": "Ton sayisi azaltilir; serigrafi/afis gorunumu.",
+      "intent": "Afis, grafik",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "style.posterize",
+            "instance": "bd8ccd0a0d3a",
+            "params": {
+              "levels": 6.0,
+              "softness": 18.0,
+              "per_channel": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "6be330b96427",
+            "params": {
+              "amount": 26.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "c617ddfce31c",
+            "params": {
+              "amount": 22.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "lo-fi-print",
+      "name": "Lo-Fi Print",
+      "category": "texture",
+      "description": "Dusuk kaliteli baski hissi: sinirli ton, kagit dokusu, tane.",
+      "intent": "Zine, lo-fi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "style.posterize",
+            "instance": "e9dcc9d1e28b",
+            "params": {
+              "levels": 12.0,
+              "softness": 34.0,
+              "per_channel": true,
+              "amount": 70.0
+            }
+          },
+          {
+            "op": "texture.paper",
+            "instance": "d1936d766745",
+            "params": {
+              "strength": 36.0,
+              "scale": 4.0,
+              "fibre": 50.0,
+              "warmth": 16.0,
+              "seed": 4,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "2296cdcf31c6",
+            "params": {
+              "amount": 34.0,
+              "size": 2.6,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "c1a9ea0b028e",
+            "params": {
+              "amount": -16.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "frosted-blur",
+      "name": "Frosted Blur",
+      "category": "texture",
+      "description": "Buzlu cam etkisi: genel bulaniklik ve isik yayilimi.",
+      "intent": "Soyut, arka plan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "blur.gaussian",
+            "instance": "574445df36d6",
+            "params": {
+              "radius": 20.0,
+              "amount": 52.0
+            }
+          },
+          {
+            "op": "blur.motion",
+            "instance": "15098ad6be69",
+            "params": {
+              "mode": "radial",
+              "strength": 26.0,
+              "angle": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5,
+              "protect_center": 34.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "d54e72bd0a4e",
+            "params": {
+              "threshold": 0.66,
+              "radius": 140.0,
+              "intensity": 32.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "2d91f9a53b60",
+            "params": {
+              "lift": 18.0,
+              "rolloff": 10.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

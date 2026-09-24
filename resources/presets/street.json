@@ -1,0 +1,782 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "street",
+  "label": "Sokak ve şehir",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "urban-steel",
+      "name": "Urban Steel",
+      "category": "street",
+      "description": "Beton ve cam icin dokulu gri-mavi: renk geri cekilir, yuzey ayrintisi one cikar.",
+      "intent": "Sehir, mimari",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "d7120d4a07e8",
+            "params": {
+              "shadow_color": [
+                0.45,
+                0.48,
+                0.53
+              ],
+              "shadow_amount": 20.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "0e81b1e4a342",
+            "params": {
+              "amount": -18.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "bfe6096532d4",
+            "params": {
+              "amount": 46.0,
+              "radius": 38.0
+            }
+          },
+          {
+            "op": "detail.sharpen",
+            "instance": "ce6272e358be",
+            "params": {
+              "amount": 42.0,
+              "radius": 1.1,
+              "threshold": 3.0,
+              "protect_highlights": true
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "17c5cf6096ed",
+            "params": {
+              "black": 10.0,
+              "white": 8.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "5db8f1614d1e",
+            "params": {
+              "amount": 16.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "concrete-mood",
+      "name": "Concrete Mood",
+      "category": "street",
+      "description": "Gri yuzeyleri dokulu gosterir; renk geri cekilir.",
+      "intent": "Beton, brutalist mimari",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.saturation",
+            "instance": "4c3f169af426",
+            "params": {
+              "amount": -34.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "89817964594d",
+            "params": {
+              "amount": 38.0,
+              "radius": 45.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "5855f9e59ccf",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0.03
+                ],
+                [
+                  0.4,
+                  0.36
+                ],
+                [
+                  0.8,
+                  0.84
+                ],
+                [
+                  1,
+                  0.99
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "56b279f0c99f",
+            "params": {
+              "amount": 14.0,
+              "size": 1.8,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "rainy-street",
+      "name": "Rainy Street",
+      "category": "street",
+      "description": "Islak asfalt: renk soluklasir, yansimalar parlar, hava serinler.",
+      "intent": "Yagmur, islak zemin",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "09c666fae545",
+            "params": {
+              "kelvin": 5709.5,
+              "tint": -6.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "cd2598860d99",
+            "params": {
+              "threshold": 0.6,
+              "radius": 100.0,
+              "intensity": 54.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "35cf50675798",
+            "params": {
+              "amount": -26.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "79fa40c8ca46",
+            "params": {
+              "lift": 14.0,
+              "rolloff": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "038e6f6c5e31",
+            "params": {
+              "shadows": 20.0,
+              "highlights": -22.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "night-walk",
+      "name": "Night Walk",
+      "category": "street",
+      "description": "Karanlikta ayrinti acar, isik kaynaklarina hale verir.",
+      "intent": "Gece sokak",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "6f2473792e63",
+            "params": {
+              "shadows": 34.0,
+              "highlights": -26.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "2eab6bb815d6",
+            "params": {
+              "threshold": 0.66,
+              "radius": 40.0,
+              "intensity": 46.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.denoise",
+            "instance": "0b9e84af1ed7",
+            "params": {
+              "luminance": 26.0,
+              "colour": 42.0,
+              "detail": 60.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "22f1dc8a7856",
+            "params": {
+              "shadow_color": [
+                0.42,
+                0.46,
+                0.58
+              ],
+              "shadow_amount": 24.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "neon-city",
+      "name": "Neon City",
+      "category": "street",
+      "description": "Magenta ve cyan neon ayrimi; isiklar parlar.",
+      "intent": "Neon isikli gece",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "3d4872f7f3a5",
+            "params": {
+              "shadow_color": [
+                0.36,
+                0.42,
+                0.66
+              ],
+              "shadow_amount": 38.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.66,
+                0.4,
+                0.62
+              ],
+              "highlight_amount": 30.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "3822e6e72b2b",
+            "params": {
+              "amount": 32.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "821d0e775820",
+            "params": {
+              "threshold": 0.62,
+              "radius": 100.0,
+              "intensity": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.anamorphic",
+            "instance": "9a1b31b6eb1a",
+            "params": {
+              "threshold": 0.85,
+              "length": 240.0,
+              "thickness": 5.0,
+              "intensity": 34.0,
+              "angle": 0.0,
+              "color": [
+                0.45,
+                0.68,
+                1.0
+              ],
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "vintage-street",
+      "name": "Vintage Street",
+      "category": "street",
+      "description": "Eski baski hissi: soluk renk, hafif grain.",
+      "intent": "Sokak, belgesel",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.fade",
+            "instance": "7514cf76233a",
+            "params": {
+              "lift": 20.0,
+              "rolloff": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "1811a5ecd23e",
+            "params": {
+              "amount": -18.0
+            }
+          },
+          {
+            "op": "color.split_tone",
+            "instance": "da9a0c47f3b3",
+            "params": {
+              "shadow_color": [
+                0.4,
+                0.42,
+                0.34
+              ],
+              "shadow_strength": 24.0,
+              "highlight_color": [
+                0.92,
+                0.86,
+                0.7
+              ],
+              "highlight_strength": 26.0,
+              "balance": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "39be8c2e6467",
+            "params": {
+              "amount": 24.0,
+              "size": 2.4,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "moody-architecture",
+      "name": "Moody Architecture",
+      "category": "street",
+      "description": "Koyu ve grafik; cizgiler ve golgeler one cikar.",
+      "intent": "Mimari, ic mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.curves",
+            "instance": "a0fcfe8c19bf",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.32,
+                  0.2
+                ],
+                [
+                  0.72,
+                  0.8
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "c9468193b5bc",
+            "params": {
+              "amount": -28.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "49eed4a28892",
+            "params": {
+              "amount": 34.0,
+              "radius": 55.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "29d3c8200ec5",
+            "params": {
+              "amount": -26.0,
+              "midpoint": 0.6,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "subway-contrast",
+      "name": "Subway Contrast",
+      "category": "street",
+      "description": "Yapay isikta sert kontrast ve temiz beyaz denge.",
+      "intent": "Metro, tunel, ic mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "7942c94203b4",
+            "params": {
+              "kelvin": 10059.5,
+              "tint": -10.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "3f1eda617070",
+            "params": {
+              "amount": 34.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "e1a3a7fae7b7",
+            "params": {
+              "black": 14.0,
+              "white": 6.0
+            }
+          },
+          {
+            "op": "detail.denoise",
+            "instance": "d65d803fb5ef",
+            "params": {
+              "luminance": 20.0,
+              "colour": 34.0,
+              "detail": 55.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "urban-fade",
+      "name": "Urban Fade",
+      "category": "street",
+      "description": "Serin mat sokak estetigi: soluk gri-mavi tonlar, yuzey dokusu acikta.",
+      "intent": "Sokak, gundelik",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.fade",
+            "instance": "4aa92311e133",
+            "params": {
+              "lift": 26.0,
+              "rolloff": 18.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "3d94e2238f86",
+            "params": {
+              "shadow_color": [
+                0.4,
+                0.46,
+                0.58
+              ],
+              "shadow_amount": 44.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.5,
+                0.52,
+                0.54
+              ],
+              "highlight_amount": 24.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "6a1ab4c463d9",
+            "params": {
+              "amount": 28.0,
+              "radius": 45.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "00e0c0e01aa3",
+            "params": {
+              "amount": -24.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "amber-street",
+      "name": "Amber Street",
+      "category": "street",
+      "description": "Sokak lambasinin kehribar tonu; golgeler mavi kalir.",
+      "intent": "Aksam sokagi, sokak lambasi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "f92b860f84f3",
+            "params": {
+              "shadow_color": [
+                0.38,
+                0.44,
+                0.6
+              ],
+              "shadow_amount": 30.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.66,
+                0.52,
+                0.36
+              ],
+              "highlight_amount": 40.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "dcb5beee2cea",
+            "params": {
+              "threshold": 0.72,
+              "radius": 34.0,
+              "intensity": 38.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "ee11e71d8431",
+            "params": {
+              "amount": 18.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "57ab62b2ea36",
+            "params": {
+              "amount": 16.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "natural",
+  "label": "Doğal ve temiz",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "natural-balance",
+      "name": "Natural Balance",
+      "category": "natural",
+      "description": "Notr baslangic: hafif kontrast, dengeli ten tonu, dogal renk.",
+      "intent": "Her tur fotograf",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.contrast",
+            "instance": "61182dcd9bf8",
+            "params": {
+              "amount": 20.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "f159a3998d8c",
+            "params": {
+              "amount": 24.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "d9edf668d570",
+            "params": {
+              "shadows": 16.0,
+              "highlights": -18.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "7fbe37f0d1d6",
+            "params": {
+              "black": 6.0,
+              "white": 5.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "clean-daylight",
+      "name": "Clean Daylight",
+      "category": "natural",
+      "description": "Gunes isigini temizler: beyazlar notr, golgeler acik, renk berrak.",
+      "intent": "Gun isigi, dis mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "11d2f35fd7d2",
+            "params": {
+              "kelvin": 6814.5,
+              "tint": -3.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "8788e37e9bad",
+            "params": {
+              "black": 4.0,
+              "white": 6.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "cb8565ce5737",
+            "params": {
+              "shadows": 18.0,
+              "highlights": -18.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "ed6ce86648f8",
+            "params": {
+              "amount": 10.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "gentle-contrast",
+      "name": "Gentle Contrast",
+      "category": "natural",
+      "description": "Ton egrisiyle yumusak S kontrasti; golgeler ezilmez.",
+      "intent": "Duz isikli sahneler",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.curves",
+            "instance": "c22426000139",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.25,
+                  0.21
+                ],
+                [
+                  0.75,
+                  0.79
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "84e22d15370f",
+            "params": {
+              "amount": 5.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "soft-detail",
+      "name": "Soft Detail",
+      "category": "natural",
+      "description": "Ayrinti belirginlesir ama sertlesmez: olculu keskinlestirme, belirgin yerel kontrast ve acilan golge.",
+      "intent": "Portre ve urun",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "detail.sharpen",
+            "instance": "211c0ee05fa0",
+            "params": {
+              "amount": 72.0,
+              "radius": 1.6,
+              "threshold": 3.0,
+              "protect_highlights": true
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "0422e9ff141d",
+            "params": {
+              "amount": 34.0,
+              "radius": 55.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "3e103d63da9e",
+            "params": {
+              "shadows": 22.0,
+              "highlights": -12.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "7f190b5abfe6",
+            "params": {
+              "black": 8.0,
+              "white": 6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "true-color",
+      "name": "True Color",
+      "category": "natural",
+      "description": "Renkleri olabildigince sadik birakir; yalnizca ton araligini acar.",
+      "intent": "Belge ve reprodüksiyon",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.black_white_point",
+            "instance": "47b35290c256",
+            "params": {
+              "black": 14.0,
+              "white": 12.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "040c3e39f6b9",
+            "params": {
+              "rgb": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.18,
+                  0.16
+                ],
+                [
+                  0.5,
+                  0.5
+                ],
+                [
+                  0.82,
+                  0.84
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.sharpen",
+            "instance": "01661abee33e",
+            "params": {
+              "amount": 60.0,
+              "radius": 0.9,
+              "threshold": 2.0,
+              "protect_highlights": true
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "2452a2aa84a5",
+            "params": {
+              "amount": -6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "cool-clean",
+      "name": "Cool Clean",
+      "category": "natural",
+      "description": "Serin beyaz denge, notr golgeler, modern ve ferah his.",
+      "intent": "Mimari, ic mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "b4046cdc6829",
+            "params": {
+              "kelvin": 5152.4,
+              "tint": -14.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "3f908b25d74e",
+            "params": {
+              "shadow_color": [
+                0.4,
+                0.48,
+                0.6
+              ],
+              "shadow_amount": 34.0,
+              "midtone_color": [
+                0.47,
+                0.51,
+                0.55
+              ],
+              "midtone_amount": 20.0,
+              "highlight_color": [
+                0.5,
+                0.53,
+                0.56
+              ],
+              "highlight_amount": 20.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "9d953d5b0376",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -24.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": -18.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 16.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "1655f68ba2ec",
+            "params": {
+              "amount": 18.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "b2131fac6333",
+            "params": {
+              "amount": 22.0,
+              "radius": 70.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "warm-clean",
+      "name": "Warm Clean",
+      "category": "natural",
+      "description": "Sicak ama kirli olmayan ton; tenler canli, beyazlar krem, golgeler acik kalir.",
+      "intent": "Aile, ic mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "d9fa7442580d",
+            "params": {
+              "kelvin": 8203.9,
+              "tint": 6.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "7cca3fbfe059",
+            "params": {
+              "shadow_color": [
+                0.52,
+                0.5,
+                0.47
+              ],
+              "shadow_amount": 18.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.62,
+                0.54,
+                0.43
+              ],
+              "highlight_amount": 38.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "0b70194c2bde",
+            "params": {
+              "amount": 26.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "185b253e535b",
+            "params": {
+              "shadows": 14.0,
+              "highlights": 0.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "airy-whites",
+      "name": "Airy Whites",
+      "category": "natural",
+      "description": "Parlak alanlari acar, golgeleri hafifce kaldirir: havadar gorunum.",
+      "intent": "Dugun, yuksek anahtar",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.exposure",
+            "instance": "708d2ce61ce9",
+            "params": {
+              "stops": 0.25
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "23fa80b4823b",
+            "params": {
+              "shadows": 26.0,
+              "highlights": -8.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "73094a72c2e1",
+            "params": {
+              "lift": 12.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "e4b6df7dda42",
+            "params": {
+              "amount": -6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "rich-natural",
+      "name": "Rich Natural",
+      "category": "natural",
+      "description": "Doygunluk ve derinlik artar, renkler dogal kalir.",
+      "intent": "Manzara ve seyahat",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.contrast",
+            "instance": "2b89f233c85a",
+            "params": {
+              "amount": 22.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "8e4df8b69bc8",
+            "params": {
+              "amount": 28.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "05f485f6b56a",
+            "params": {
+              "amount": 18.0,
+              "radius": 70.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "9bca83eeccf1",
+            "params": {
+              "amount": -12.0,
+              "midpoint": 0.7,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "everyday-polish",
+      "name": "Everyday Polish",
+      "category": "natural",
+      "description": "Hizli iyilestirme: ton araligi, canlilik ve ayrinti bir arada.",
+      "intent": "Gunluk telefon fotografi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "10d7cf45fc73",
+            "params": {
+              "shadows": 38.0,
+              "highlights": -32.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "2f0d05a461f6",
+            "params": {
+              "black": 12.0,
+              "white": 10.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "1f71ddd1a679",
+            "params": {
+              "amount": 26.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "1963f13352a8",
+            "params": {
+              "amount": 40.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "9e03df508136",
+            "params": {
+              "amount": 24.0,
+              "radius": 55.0
+            }
+          },
+          {
+            "op": "detail.sharpen",
+            "instance": "5d6cdbdca404",
+            "params": {
+              "amount": 90.0,
+              "radius": 1.0,
+              "threshold": 3.0,
+              "protect_highlights": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

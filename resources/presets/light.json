@@ -1,0 +1,638 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "light",
+  "label": "Işık ve atmosfer",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "golden-hour",
+      "name": "Golden Hour",
+      "category": "light",
+      "description": "Altin saatin isigi: yonlu parlama, acilan golge ve parlak alanlarda hale.",
+      "intent": "Gun batimi, manzara ve portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "abb367f0182e",
+            "params": {
+              "kelvin": 7971.7,
+              "tint": 6.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "0c21260ba05a",
+            "params": {
+              "threshold": 0.58,
+              "radius": 70.0,
+              "intensity": 64.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "0ef6136f09f8",
+            "params": {
+              "threshold": 0.7,
+              "radius": 130.0,
+              "intensity": 30.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "ea73df43c048",
+            "params": {
+              "shadows": 30.0,
+              "highlights": -16.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "15e58b81f560",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.68,
+                0.55,
+                0.36
+              ],
+              "highlight_amount": 40.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "6afac339b052",
+            "params": {
+              "amount": 16.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "blue-hour",
+      "name": "Blue Hour",
+      "category": "light",
+      "description": "Gun batiminden sonraki mavi sessizlik.",
+      "intent": "Alacakaranlik, sehir",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "8c1a0b27097b",
+            "params": {
+              "kelvin": 5559.2,
+              "tint": -6.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "78e31a09d8ad",
+            "params": {
+              "shadow_color": [
+                0.36,
+                0.44,
+                0.64
+              ],
+              "shadow_amount": 38.0,
+              "midtone_color": [
+                0.44,
+                0.5,
+                0.62
+              ],
+              "midtone_amount": 22.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "666b493e7424",
+            "params": {
+              "shadows": 20.0,
+              "highlights": -16.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "soft-bloom",
+      "name": "Soft Bloom",
+      "category": "light",
+      "description": "Parlak alanlardan yayilan yumusak isik.",
+      "intent": "Portre, cicek",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.bloom",
+            "instance": "2a3ca487e9d2",
+            "params": {
+              "threshold": 0.6,
+              "radius": 130.0,
+              "intensity": 58.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "b512aa3af443",
+            "params": {
+              "amount": -10.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "eba7ddaa9b6e",
+            "params": {
+              "amount": 6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "dream-haze",
+      "name": "Dream Haze",
+      "category": "light",
+      "description": "Notr ve olculu sis: diffusion one cikar, renk oldugu gibi kalir.",
+      "intent": "Ruya gibi sahneler",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "af7f08e79422",
+            "params": {
+              "shadows": 22.0,
+              "highlights": -24.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "1b457d8453e6",
+            "params": {
+              "strength": 60.0,
+              "radius": 70.0,
+              "lift": 20.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "6139002e236e",
+            "params": {
+              "threshold": 0.8,
+              "radius": 110.0,
+              "intensity": 18.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "0c746e18343b",
+            "params": {
+              "amount": -6.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "78c5c694a329",
+            "params": {
+              "lift": 12.0,
+              "rolloff": 10.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "window-light",
+      "name": "Window Light",
+      "category": "light",
+      "description": "Pencereden gelen tek yonlu isik: kenarlara dogru dusen parlaklik, serin golge, acik ten.",
+      "intent": "Ic mekan portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "a2aab1f370e6",
+            "params": {
+              "shadows": 42.0,
+              "highlights": -30.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "15875155d128",
+            "params": {
+              "amount": -34.0,
+              "midpoint": 0.48,
+              "feather": 0.8,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "90991f6f2382",
+            "params": {
+              "shadow_color": [
+                0.42,
+                0.47,
+                0.58
+              ],
+              "shadow_amount": 34.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.56,
+                0.55,
+                0.52
+              ],
+              "highlight_amount": 18.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "96274fddf754",
+            "params": {
+              "black": 6.0,
+              "white": 10.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "amber-leak",
+      "name": "Amber Leak",
+      "category": "light",
+      "description": "Kehribar isik sizintisi; kenardan yayilan sicak parlama.",
+      "intent": "Analog his",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.light_leak",
+            "instance": "df25dc14d502",
+            "params": {
+              "intensity": 46.0,
+              "color": [
+                1.0,
+                0.58,
+                0.24
+              ],
+              "size": 0.75,
+              "softness": 72.0,
+              "seed": 3,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "fbecdb29d41a",
+            "params": {
+              "lift": 14.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "ffbab2c28652",
+            "params": {
+              "amount": 12.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "cool-mist",
+      "name": "Cool Mist",
+      "category": "light",
+      "description": "Serin sis: dusuk doygunluk, mavi golgeler, acik tonlar.",
+      "intent": "Sabah sisi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.diffusion",
+            "instance": "d5377b198b85",
+            "params": {
+              "strength": 40.0,
+              "radius": 85.0,
+              "lift": 36.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "951c2f596581",
+            "params": {
+              "kelvin": 5868.1,
+              "tint": -5.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "9b4904b17191",
+            "params": {
+              "amount": -22.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "461fe2160946",
+            "params": {
+              "lift": 20.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "backlight-glow",
+      "name": "Backlight Glow",
+      "category": "light",
+      "description": "Arkadan gelen isigin sacilmasi ve kontur parlamasi.",
+      "intent": "Arkadan isikli portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.bloom",
+            "instance": "39d5b8794cd6",
+            "params": {
+              "threshold": 0.66,
+              "radius": 120.0,
+              "intensity": 66.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "854d6f441186",
+            "params": {
+              "threshold": 0.74,
+              "radius": 44.0,
+              "intensity": 40.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "9b94cc285657",
+            "params": {
+              "shadows": 28.0,
+              "highlights": -14.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "sunset-flare",
+      "name": "Sunset Flare",
+      "category": "light",
+      "description": "Gunes parlamasi ve anamorfik cizgi.",
+      "intent": "Gun batimi, lens parlamasi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.anamorphic",
+            "instance": "d2fcbd8bf800",
+            "params": {
+              "threshold": 0.8,
+              "length": 380.0,
+              "thickness": 7.0,
+              "intensity": 44.0,
+              "angle": 0.0,
+              "color": [
+                1.0,
+                0.72,
+                0.42
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "08a530a63ee9",
+            "params": {
+              "threshold": 0.7,
+              "radius": 46.0,
+              "intensity": 44.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "cbff2f8b4dfa",
+            "params": {
+              "kelvin": 8125.0,
+              "tint": 6.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "eeab808b615c",
+            "params": {
+              "lift": 12.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "ethereal-light",
+      "name": "Ethereal Light",
+      "category": "light",
+      "description": "Ruhani, ucucu isik: yuksek bloom, dusuk kontrast, pastel kayma.",
+      "intent": "Soyut, atmosferik",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.bloom",
+            "instance": "cad5c62d5af5",
+            "params": {
+              "threshold": 0.5,
+              "radius": 180.0,
+              "intensity": 78.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "413c8ca7c140",
+            "params": {
+              "strength": 34.0,
+              "radius": 100.0,
+              "lift": 34.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "2f4ef446e2db",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.56,
+                0.52,
+                0.58
+              ],
+              "highlight_amount": 26.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "6a5ca12e38d5",
+            "params": {
+              "amount": -18.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2875 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "cinema",
+  "label": "Sinema",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "teal-amber",
+      "name": "Teal & Amber",
+      "category": "cinema",
+      "description": "Soguk golgeler, sicak parlak alanlar. Modern sinemanin en yaygin renk ayrimi; tenler sicak kalirken cevre serinler.",
+      "intent": "Aksiyon, portre, genel",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "3c449fd27bae",
+            "params": {
+              "shadow_color": [
+                0.32,
+                0.5,
+                0.58
+              ],
+              "shadow_amount": 44.0,
+              "midtone_color": [
+                0.52,
+                0.5,
+                0.48
+              ],
+              "midtone_amount": 12.0,
+              "highlight_color": [
+                0.66,
+                0.54,
+                0.38
+              ],
+              "highlight_amount": 40.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "e7726beb27b9",
+            "params": {
+              "toe": 26.0,
+              "shoulder": 34.0,
+              "pivot": 0.45,
+              "strength": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "224eec46755b",
+            "params": {
+              "amount": 14.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "4bcb46739c07",
+            "params": {
+              "amount": 16.0,
+              "size": 1.8,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "soft-blockbuster",
+      "name": "Soft Blockbuster",
+      "category": "cinema",
+      "description": "Kontrollu kontrast ve yumusak renk ayrimi; gozu yormayan, genis kitleye yonelik sinema bakisi.",
+      "intent": "Genel, kalabalik sahne",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "1ae037ed06f9",
+            "params": {
+              "toe": 30.0,
+              "shoulder": 50.0,
+              "pivot": 0.45,
+              "strength": 22.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "a65c90744f36",
+            "params": {
+              "shadow_color": [
+                0.38,
+                0.48,
+                0.6
+              ],
+              "shadow_amount": 34.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.62,
+                0.55,
+                0.44
+              ],
+              "highlight_amount": 32.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "b937b555a5bf",
+            "params": {
+              "threshold": 0.7,
+              "radius": 40.0,
+              "intensity": 38.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "1d9f38f93a5c",
+            "params": {
+              "amount": 16.0,
+              "radius": 80.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "d0cb46fc4507",
+            "params": {
+              "amount": 12.0,
+              "size": 1.6,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "desert-epic",
+      "name": "Desert Epic",
+      "category": "cinema",
+      "description": "Kum, altin ve bakir tonlari; genis manzaranin sicak destani.",
+      "intent": "Col, genis manzara",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "60c943eb2c98",
+            "params": {
+              "kelvin": 8125.0,
+              "tint": 8.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "a00ef62e3763",
+            "params": {
+              "shadow_color": [
+                0.46,
+                0.44,
+                0.42
+              ],
+              "shadow_amount": 22.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.68,
+                0.56,
+                0.36
+              ],
+              "highlight_amount": 42.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "01a0276f199a",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 32.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 28.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -26.0,
+              "blue_lum": -32.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "3152d60818f1",
+            "params": {
+              "toe": 12.0,
+              "shoulder": 34.0,
+              "pivot": 0.45,
+              "strength": 34.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "fdacf010d9ba",
+            "params": {
+              "amount": 32.0,
+              "radius": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "819f3ba29ba8",
+            "params": {
+              "threshold": 0.72,
+              "radius": 36.0,
+              "intensity": 30.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "neon-rain",
+      "name": "Neon Rain",
+      "category": "cinema",
+      "description": "Mavi ve magenta gece atmosferi; islak yuzeylerde parlayan neon.",
+      "intent": "Gece sehri, yagmur",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "da78ab7bc944",
+            "params": {
+              "shadow_color": [
+                0.32,
+                0.4,
+                0.7
+              ],
+              "shadow_amount": 46.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.68,
+                0.4,
+                0.64
+              ],
+              "highlight_amount": 34.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "ed92fbcf9267",
+            "params": {
+              "threshold": 0.6,
+              "radius": 120.0,
+              "intensity": 58.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "e1611124e07a",
+            "params": {
+              "threshold": 0.7,
+              "radius": 38.0,
+              "intensity": 34.0,
+              "color": [
+                0.9,
+                0.35,
+                0.75
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.anamorphic",
+            "instance": "159bc52888ad",
+            "params": {
+              "threshold": 0.82,
+              "length": 300.0,
+              "thickness": 6.0,
+              "intensity": 38.0,
+              "angle": 0.0,
+              "color": [
+                0.45,
+                0.68,
+                1.0
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "a11b511c89be",
+            "params": {
+              "amount": 18.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "emerald-thriller",
+      "name": "Emerald Thriller",
+      "category": "cinema",
+      "description": "Yesil golgeler ve tedirgin edici sogukluk.",
+      "intent": "Gerilim, ic mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "af3795b8caa2",
+            "params": {
+              "shadow_color": [
+                0.38,
+                0.56,
+                0.44
+              ],
+              "shadow_amount": 44.0,
+              "midtone_color": [
+                0.48,
+                0.52,
+                0.48
+              ],
+              "midtone_amount": 20.0,
+              "highlight_color": [
+                0.56,
+                0.56,
+                0.5
+              ],
+              "highlight_amount": 18.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "1eae68f5f4a2",
+            "params": {
+              "amount": -14.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "2b91f1a415e4",
+            "params": {
+              "toe": 20.0,
+              "shoulder": 30.0,
+              "pivot": 0.45,
+              "strength": 22.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "d37bc6119673",
+            "params": {
+              "amount": -22.0,
+              "midpoint": 0.6,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "steel-thriller",
+      "name": "Steel Thriller",
+      "category": "cinema",
+      "description": "Sinematik celik mavisi: ezik ayak, soguk golge, sikismis parlak alan. Gerilim filmlerinin mesafeli bakisi.",
+      "intent": "Gerilim, sehir",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "fa3a3f436c14",
+            "params": {
+              "toe": 46.0,
+              "shoulder": 38.0,
+              "pivot": 0.45,
+              "strength": 20.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "19f227844649",
+            "params": {
+              "shadow_color": [
+                0.34,
+                0.44,
+                0.64
+              ],
+              "shadow_amount": 58.0,
+              "midtone_color": [
+                0.46,
+                0.49,
+                0.55
+              ],
+              "midtone_amount": 22.0,
+              "highlight_color": [
+                0.52,
+                0.55,
+                0.6
+              ],
+              "highlight_amount": 30.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "cb572e848e9e",
+            "params": {
+              "amount": -34.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "fa744838147c",
+            "params": {
+              "amount": 30.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "825047c723fe",
+            "params": {
+              "amount": -26.0,
+              "midpoint": 0.55,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "classic-noir",
+      "name": "Classic Noir",
+      "category": "cinema",
+      "description": "Guclu siyah-beyaz ayrim: derin golgeler, sert isik.",
+      "intent": "Gece, portre, gerilim",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "849de573871f",
+            "params": {
+              "red": 14.0,
+              "orange": 0.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": -22.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "8a07f463e91e",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.36,
+                  0.15
+                ],
+                [
+                  0.76,
+                  0.87
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "1ee8632a054b",
+            "params": {
+              "amount": -44.0,
+              "midpoint": 0.5,
+              "feather": 0.8,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "a1ee0b0a3484",
+            "params": {
+              "amount": 30.0,
+              "size": 2.4,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "silver-screen",
+      "name": "Silver Screen",
+      "category": "cinema",
+      "description": "Yumusak klasik siyah-beyaz; genis ton araligi ve parlak hale.",
+      "intent": "Klasik portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "d46dbb27d701",
+            "params": {
+              "red": 0.0,
+              "orange": 12.0,
+              "yellow": 8.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "89f47c56b578",
+            "params": {
+              "toe": 34.0,
+              "shoulder": 46.0,
+              "pivot": 0.45,
+              "strength": 8.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "ab5de7547b12",
+            "params": {
+              "threshold": 0.7,
+              "radius": 100.0,
+              "intensity": 34.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "5b3de6145f99",
+            "params": {
+              "amount": 20.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "bleach-drama",
+      "name": "Bleach Drama",
+      "category": "cinema",
+      "description": "Dusuk doygunluk ve guclu kontrast; agartma atlanmis film.",
+      "intent": "Savas, dram",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "0ebe8fcc48a6",
+            "params": {
+              "shadows": 0.0,
+              "highlights": -26.0
+            }
+          },
+          {
+            "op": "style.bleach_bypass",
+            "instance": "62c1bea44060",
+            "params": {
+              "strength": 70.0,
+              "contrast": 32.0,
+              "grit": 30.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "f8a3d2c5d5a6",
+            "params": {
+              "shadow_color": [
+                0.44,
+                0.48,
+                0.52
+              ],
+              "shadow_amount": 22.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "fc01a470cc54",
+            "params": {
+              "amount": 28.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "golden-memory",
+      "name": "Golden Memory",
+      "category": "cinema",
+      "description": "Sicak, nostaljik ve yumusak; hatira hissi.",
+      "intent": "Geriye donus, aile",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "15c4737d147d",
+            "params": {
+              "kelvin": 8989.4,
+              "tint": 14.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "f49814e32845",
+            "params": {
+              "shadow_color": [
+                0.54,
+                0.47,
+                0.4
+              ],
+              "shadow_amount": 30.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.7,
+                0.57,
+                0.38
+              ],
+              "highlight_amount": 46.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "4bd3affa7410",
+            "params": {
+              "lift": 34.0,
+              "rolloff": 20.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "d4c8b1ae0db6",
+            "params": {
+              "amount": -18.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "e7c9afc4bc03",
+            "params": {
+              "amount": 30.0,
+              "size": 2.8,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "2f03b4777a9f",
+            "params": {
+              "amount": -20.0,
+              "midpoint": 0.62,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "pastel-cinema",
+      "name": "Pastel Cinema",
+      "category": "cinema",
+      "description": "Hafif kontrast ve pastel palet; simetrik, oyuncu bir bakis.",
+      "intent": "Bagimsiz film, komedi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.saturation",
+            "instance": "c0728c4eae3e",
+            "params": {
+              "amount": -38.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "99c0e1466ee3",
+            "params": {
+              "shadow_color": [
+                0.53,
+                0.5,
+                0.57
+              ],
+              "shadow_amount": 26.0,
+              "midtone_color": [
+                0.59,
+                0.49,
+                0.55
+              ],
+              "midtone_amount": 40.0,
+              "highlight_color": [
+                0.61,
+                0.56,
+                0.45
+              ],
+              "highlight_amount": 34.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "cd2e404c2dfe",
+            "params": {
+              "lift": 28.0,
+              "rolloff": 24.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "c4d5f38928b9",
+            "params": {
+              "strength": 26.0,
+              "radius": 60.0,
+              "lift": 18.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "bd20f6dd071f",
+            "params": {
+              "toe": 32.0,
+              "shoulder": 42.0,
+              "pivot": 0.45,
+              "strength": -14.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "winter-drama",
+      "name": "Winter Drama",
+      "category": "cinema",
+      "description": "Soguk, acik ve sakin tonlar; nefes alan bir bosluk.",
+      "intent": "Kis, dram",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "5cfd6120f2e4",
+            "params": {
+              "kelvin": 5709.5,
+              "tint": -8.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "58c270887799",
+            "params": {
+              "amount": -24.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "34c215686320",
+            "params": {
+              "shadows": 26.0,
+              "highlights": -22.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "61019cf1c99f",
+            "params": {
+              "shadow_color": [
+                0.42,
+                0.48,
+                0.6
+              ],
+              "shadow_amount": 30.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "d885aa2ac8c2",
+            "params": {
+              "strength": 18.0,
+              "radius": 70.0,
+              "lift": 22.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "nordic-mystery",
+      "name": "Nordic Mystery",
+      "category": "cinema",
+      "description": "Soluk renkler ve serin golgeler; iskandinav polisiyesi.",
+      "intent": "Polisiye, kuzey",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.saturation",
+            "instance": "e6da14796c00",
+            "params": {
+              "amount": -52.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "cae26c429dfd",
+            "params": {
+              "shadow_color": [
+                0.44,
+                0.52,
+                0.56
+              ],
+              "shadow_amount": 30.0,
+              "midtone_color": [
+                0.5,
+                0.53,
+                0.53
+              ],
+              "midtone_amount": 26.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "00831343b168",
+            "params": {
+              "lift": 38.0,
+              "rolloff": 22.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "505c6c7c3f14",
+            "params": {
+              "toe": 44.0,
+              "shoulder": 30.0,
+              "pivot": 0.45,
+              "strength": -6.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "1d3067a892f1",
+            "params": {
+              "amount": 26.0,
+              "size": 2.6,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "vintage-western",
+      "name": "Vintage Western",
+      "category": "cinema",
+      "description": "Toprak ve sicak tozlu tonlar; guneste solmus gorunum.",
+      "intent": "Western, donem filmi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "cf689481cecb",
+            "params": {
+              "kelvin": 7971.7,
+              "tint": 12.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "670c34ac86cd",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 18.0,
+              "orange_lum": 0.0,
+              "yellow_hue": -14.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -30.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "7d0e1641132f",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.46,
+                0.38
+              ],
+              "shadow_amount": 30.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.66,
+                0.58,
+                0.44
+              ],
+              "highlight_amount": 34.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "bd08e8a7efe3",
+            "params": {
+              "lift": 18.0,
+              "rolloff": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.dust",
+            "instance": "4895cfd6a0c8",
+            "params": {
+              "dust": 20.0,
+              "scratches": 14.0,
+              "dust_size": 3.0,
+              "dark_ratio": 55.0,
+              "seed": 2,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "night-tungsten",
+      "name": "Night Tungsten",
+      "category": "cinema",
+      "description": "Sicak yapay isiklar, serin gece cevresi.",
+      "intent": "Gece ic mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "cba7b8b0488a",
+            "params": {
+              "kelvin": 10304.9,
+              "tint": 12.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "62b0a6267061",
+            "params": {
+              "shadow_color": [
+                0.33,
+                0.42,
+                0.66
+              ],
+              "shadow_amount": 46.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.74,
+                0.55,
+                0.3
+              ],
+              "highlight_amount": 54.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "f92607829914",
+            "params": {
+              "threshold": 0.62,
+              "radius": 44.0,
+              "intensity": 54.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "defa1f2ee3f6",
+            "params": {
+              "shadows": 32.0,
+              "highlights": -26.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "a3f6bd0d02a2",
+            "params": {
+              "amount": -14.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "317a61038d8d",
+            "params": {
+              "amount": 24.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "moonlit-blue",
+      "name": "Moonlit Blue",
+      "category": "cinema",
+      "description": "Mavi gece yorumu. Gercek yeniden aydinlatma degildir; renk ve ton yorumudur.",
+      "intent": "Gece dis mekan",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "166422a48c33",
+            "params": {
+              "kelvin": 5152.4,
+              "tint": -10.0
+            }
+          },
+          {
+            "op": "tone.exposure",
+            "instance": "97f079746573",
+            "params": {
+              "stops": -0.3
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "78952b623077",
+            "params": {
+              "shadow_color": [
+                0.34,
+                0.42,
+                0.66
+              ],
+              "shadow_amount": 46.0,
+              "midtone_color": [
+                0.42,
+                0.48,
+                0.62
+              ],
+              "midtone_amount": 28.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "8a67c59f4e8a",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.4,
+                  0.28
+                ],
+                [
+                  0.8,
+                  0.82
+                ],
+                [
+                  1,
+                  0.96
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "3973de3a82a6",
+            "params": {
+              "amount": 24.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "urban-crime",
+      "name": "Urban Crime",
+      "category": "cinema",
+      "description": "Kirli yesil, amber ve siki kontrast.",
+      "intent": "Polisiye, sehir gecesi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "858c273d3857",
+            "params": {
+              "shadow_color": [
+                0.44,
+                0.52,
+                0.42
+              ],
+              "shadow_amount": 38.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.64,
+                0.54,
+                0.4
+              ],
+              "highlight_amount": 32.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "style.bleach_bypass",
+            "instance": "f33c7b5a512b",
+            "params": {
+              "strength": 40.0,
+              "contrast": 24.0,
+              "grit": 20.0,
+              "amount": 70.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "195770505b8c",
+            "params": {
+              "amount": 20.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "4e6682af30cb",
+            "params": {
+              "amount": 26.0,
+              "size": 2.4,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "indie-matte",
+      "name": "Indie Matte",
+      "category": "cinema",
+      "description": "Kalkik siyahlar ve dusuk doygunluk; mat, sakin bir bakis.",
+      "intent": "Bagimsiz film",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.fade",
+            "instance": "51e1e624b6ac",
+            "params": {
+              "lift": 46.0,
+              "rolloff": 28.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "78b28083fdea",
+            "params": {
+              "amount": -34.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "2e4af586dcf5",
+            "params": {
+              "shadow_color": [
+                0.45,
+                0.5,
+                0.6
+              ],
+              "shadow_amount": 38.0,
+              "midtone_color": [
+                0.5,
+                0.51,
+                0.56
+              ],
+              "midtone_amount": 22.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "1c0796cbca96",
+            "params": {
+              "toe": 48.0,
+              "shoulder": 36.0,
+              "pivot": 0.45,
+              "strength": -12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "2ea42ba268ef",
+            "params": {
+              "amount": 44.0,
+              "size": 3.0,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "festival-natural",
+      "name": "Festival Natural",
+      "category": "cinema",
+      "description": "Olculu renk ve dogal tenler; mudahalenin fark edilmedigi bakis.",
+      "intent": "Festival filmi, dram",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "017f6979ebf2",
+            "params": {
+              "toe": 16.0,
+              "shoulder": 30.0,
+              "pivot": 0.45,
+              "strength": 22.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "7dbf5acbe718",
+            "params": {
+              "black": 12.0,
+              "white": 8.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "4a6028f79f28",
+            "params": {
+              "shadow_color": [
+                0.49,
+                0.51,
+                0.53
+              ],
+              "shadow_amount": 16.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.57,
+                0.53,
+                0.46
+              ],
+              "highlight_amount": 24.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "a081035e2962",
+            "params": {
+              "amount": 26.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "2eb0817bb7ea",
+            "params": {
+              "amount": 26.0,
+              "radius": 70.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "64d8c84b46a4",
+            "params": {
+              "amount": 12.0,
+              "size": 1.6,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "dream-sequence",
+      "name": "Dream Sequence",
+      "category": "cinema",
+      "description": "Menekse kaymali guclu bloom ve halation: gecmise donus sahnelerinin gercek disi parlamasi.",
+      "intent": "Ruya, geriye donus",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "159b531b0f84",
+            "params": {
+              "shadows": 18.0,
+              "highlights": -48.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "74dc7cbf9b2b",
+            "params": {
+              "strength": 52.0,
+              "radius": 120.0,
+              "lift": 42.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "cf4c4368790b",
+            "params": {
+              "threshold": 0.58,
+              "radius": 220.0,
+              "intensity": 66.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "639a6543d17a",
+            "params": {
+              "threshold": 0.66,
+              "radius": 90.0,
+              "intensity": 0.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 34.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "27bae0ec1856",
+            "params": {
+              "amount": -24.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "16c27427bb21",
+            "params": {
+              "lift": 30.0,
+              "rolloff": 24.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "1352ce9b79cb",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.58,
+                0.54,
+                0.58
+              ],
+              "highlight_amount": 24.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "romantic-diffusion",
+      "name": "Romantic Diffusion",
+      "category": "cinema",
+      "description": "Yumusak isik ve sicak tenler; klasik romantik sahne.",
+      "intent": "Romantik, portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "4057b92a0b49",
+            "params": {
+              "shadows": 0.0,
+              "highlights": -32.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "fc09c2cc0e82",
+            "params": {
+              "strength": 58.0,
+              "radius": 95.0,
+              "lift": 34.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.bloom",
+            "instance": "d230f91a4403",
+            "params": {
+              "threshold": 0.74,
+              "radius": 130.0,
+              "intensity": 38.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "dfdcad177c61",
+            "params": {
+              "kelvin": 7971.7,
+              "tint": 6.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "3d921d63a30f",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.54,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 18.0,
+              "highlight_color": [
+                0.6,
+                0.53,
+                0.47
+              ],
+              "highlight_amount": 26.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "17e891dbed40",
+            "params": {
+              "threshold": 0.68,
+              "radius": 36.0,
+              "intensity": 38.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "92c32a732275",
+            "params": {
+              "amount": -18.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "bronze-action",
+      "name": "Bronze Action",
+      "category": "cinema",
+      "description": "Bronz parlak alanlar ve koyu golgeler; sert ve metalik.",
+      "intent": "Aksiyon",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "fd7b9e2c07c2",
+            "params": {
+              "shadow_color": [
+                0.42,
+                0.44,
+                0.48
+              ],
+              "shadow_amount": 26.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.68,
+                0.56,
+                0.38
+              ],
+              "highlight_amount": 42.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "style.bleach_bypass",
+            "instance": "5d4a29a4e234",
+            "params": {
+              "strength": 44.0,
+              "contrast": 30.0,
+              "grit": 28.0,
+              "amount": 80.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "573891f72428",
+            "params": {
+              "amount": 26.0,
+              "radius": 60.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "29e7f63e87df",
+            "params": {
+              "amount": -24.0,
+              "midpoint": 0.62,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "ocean-suspense",
+      "name": "Ocean Suspense",
+      "category": "cinema",
+      "description": "Cyan ve mavi agirlikli gerilim; derinlik ve sogukluk.",
+      "intent": "Deniz, gerilim",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.channel_mixer",
+            "instance": "82cf86b7b384",
+            "params": {
+              "rr": 74.0,
+              "rg": 10.0,
+              "rb": 16.0,
+              "gr": 0.0,
+              "gg": 100.0,
+              "gb": 10.0,
+              "br": -6.0,
+              "bg": 0.0,
+              "bb": 112.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "407757eaf4ff",
+            "params": {
+              "shadow_color": [
+                0.26,
+                0.5,
+                0.62
+              ],
+              "shadow_amount": 54.0,
+              "midtone_color": [
+                0.38,
+                0.5,
+                0.58
+              ],
+              "midtone_amount": 32.0,
+              "highlight_color": [
+                0.44,
+                0.52,
+                0.56
+              ],
+              "highlight_amount": 22.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "9884b8878b6a",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": -34.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -46.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 30.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 24.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "tone.exposure",
+            "instance": "7c00e8211a36",
+            "params": {
+              "stops": -0.25
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "f08ae2d4ee21",
+            "params": {
+              "toe": 18.0,
+              "shoulder": 24.0,
+              "pivot": 0.45,
+              "strength": 26.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "f8ffeefbd34d",
+            "params": {
+              "amount": -30.0,
+              "midpoint": 0.58,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "crimson-night",
+      "name": "Crimson Night",
+      "category": "cinema",
+      "description": "Kirmizi isik vurgulu koyu atmosfer.",
+      "intent": "Gerilim, korku",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "3dc838b0095c",
+            "params": {
+              "shadow_color": [
+                0.56,
+                0.36,
+                0.4
+              ],
+              "shadow_amount": 38.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.7,
+                0.44,
+                0.4
+              ],
+              "highlight_amount": 34.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.curves",
+            "instance": "b13465580e26",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.38,
+                  0.22
+                ],
+                [
+                  0.78,
+                  0.84
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "08f0d0d95733",
+            "params": {
+              "threshold": 0.7,
+              "radius": 42.0,
+              "intensity": 40.0,
+              "color": [
+                1.0,
+                0.28,
+                0.2
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "83a565912dd5",
+            "params": {
+              "amount": -34.0,
+              "midpoint": 0.55,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "1097941689c4",
+            "params": {
+              "amount": 26.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "olive-war-drama",
+      "name": "Olive War Drama",
+      "category": "cinema",
+      "description": "Mat zeytin ve toprak renkleri; tozlu ve agir.",
+      "intent": "Savas, donem",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "14a8b055eaab",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": -12.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 14.0,
+              "green_sat": -22.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -26.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "style.bleach_bypass",
+            "instance": "37cbb502cda4",
+            "params": {
+              "strength": 56.0,
+              "contrast": 28.0,
+              "grit": 32.0,
+              "amount": 90.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "0c2c3b0cdefc",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.5,
+                0.52,
+                0.44
+              ],
+              "midtone_amount": 30.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.dust",
+            "instance": "3ad71c71a8c7",
+            "params": {
+              "dust": 24.0,
+              "scratches": 12.0,
+              "dust_size": 3.0,
+              "dark_ratio": 55.0,
+              "seed": 2,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "64e7f7af6170",
+            "params": {
+              "amount": 30.0,
+              "size": 2.6,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "retro-scifi",
+      "name": "Retro Sci-Fi",
+      "category": "cinema",
+      "description": "Cyan/amber renk ayrimi ve analog doku; 70-80'ler bilim kurgusu.",
+      "intent": "Bilim kurgu, retro",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.lut3d",
+            "instance": "48f49463ac55",
+            "params": {
+              "lut": "builtin:teal_amber",
+              "amount": 85.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "c8f0de775648",
+            "params": {
+              "shadow_color": [
+                0.3,
+                0.52,
+                0.6
+              ],
+              "shadow_amount": 34.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.68,
+                0.56,
+                0.36
+              ],
+              "highlight_amount": 30.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.anamorphic",
+            "instance": "f8b0d2c957bf",
+            "params": {
+              "threshold": 0.8,
+              "length": 320.0,
+              "thickness": 6.0,
+              "intensity": 40.0,
+              "angle": 0.0,
+              "color": [
+                0.45,
+                0.68,
+                1.0
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "d973e0aa0afe",
+            "params": {
+              "threshold": 0.72,
+              "radius": 40.0,
+              "intensity": 34.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "48605ec40409",
+            "params": {
+              "amount": 50.0,
+              "size": 3.4,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "lens.chromatic_aberration",
+            "instance": "895e0049dc0a",
+            "params": {
+              "amount": 48.0,
+              "edge_only": true
+            }
+          },
+          {
+            "op": "texture.dust",
+            "instance": "395b3d6cf7a6",
+            "params": {
+              "dust": 18.0,
+              "scratches": 12.0,
+              "dust_size": 3.0,
+              "dark_ratio": 55.0,
+              "seed": 2,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "16mm-diary",
+      "name": "16mm Diary",
+      "category": "cinema",
+      "description": "Belirgin grain ve yumusak ayrinti; kucuk format film hissi.",
+      "intent": "Gunluk, belgesel",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.grain",
+            "instance": "5a8d9f46f75c",
+            "params": {
+              "amount": 64.0,
+              "size": 3.4,
+              "roughness": 62.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "a3b3d7bc563e",
+            "params": {
+              "toe": 34.0,
+              "shoulder": 40.0,
+              "pivot": 0.45,
+              "strength": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "light.diffusion",
+            "instance": "a523e3ceafb4",
+            "params": {
+              "strength": 20.0,
+              "radius": 50.0,
+              "lift": 20.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "54cb98cd10f7",
+            "params": {
+              "amount": -12.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "2ce27fa3b983",
+            "params": {
+              "amount": -18.0,
+              "midpoint": 0.66,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "35mm-warm-print",
+      "name": "35mm Warm Print",
+      "category": "cinema",
+      "description": "Sicak baski benzeri ton gecisi; yumusak omuz ve kehribar parlaklik.",
+      "intent": "Genel, portre",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "2134bb34d325",
+            "params": {
+              "toe": 34.0,
+              "shoulder": 52.0,
+              "pivot": 0.45,
+              "strength": 12.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "79dd2900a74e",
+            "params": {
+              "kelvin": 8622.4,
+              "tint": 12.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "422afe677397",
+            "params": {
+              "shadow_color": [
+                0.52,
+                0.48,
+                0.44
+              ],
+              "shadow_amount": 26.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.7,
+                0.56,
+                0.38
+              ],
+              "highlight_amount": 42.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "a50f5be22513",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 16.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 12.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -18.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "light.halation",
+            "instance": "11a525098c29",
+            "params": {
+              "threshold": 0.7,
+              "radius": 34.0,
+              "intensity": 34.0,
+              "color": [
+                1.0,
+                0.36,
+                0.14
+              ],
+              "channel_spread": 55.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "334b828f9b19",
+            "params": {
+              "amount": 22.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "35mm-cool-print",
+      "name": "35mm Cool Print",
+      "category": "cinema",
+      "description": "Serin baski benzeri ton gecisi; mavi golge, notr parlaklik.",
+      "intent": "Genel, sehir",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "95c6fce4e711",
+            "params": {
+              "toe": 26.0,
+              "shoulder": 42.0,
+              "pivot": 0.45,
+              "strength": 18.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "dc96907fcb75",
+            "params": {
+              "kelvin": 5281.2,
+              "tint": -14.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "bd5b1bc47bbd",
+            "params": {
+              "shadow_color": [
+                0.36,
+                0.46,
+                0.66
+              ],
+              "shadow_amount": 42.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.48,
+                0.52,
+                0.58
+              ],
+              "highlight_amount": 26.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "10f2a8d31d95",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -20.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 14.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 18.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "f7b811282526",
+            "params": {
+              "amount": 22.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "monochrome-documentary",
+      "name": "Monochrome Documentary",
+      "category": "cinema",
+      "description": "Dogal kontrastli, grenli belgesel siyah-beyaz.",
+      "intent": "Belgesel, haber",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "e3d5e53bf376",
+            "params": {
+              "red": 8.0,
+              "orange": 10.0,
+              "yellow": 0.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": -12.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "film.tone_curve",
+            "instance": "28e05aee3c85",
+            "params": {
+              "toe": 26.0,
+              "shoulder": 34.0,
+              "pivot": 0.45,
+              "strength": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "74d5310409db",
+            "params": {
+              "amount": 46.0,
+              "size": 2.6,
+              "roughness": 58.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "0b36db2537c8",
+            "params": {
+              "amount": 18.0,
+              "radius": 60.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

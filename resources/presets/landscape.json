@@ -1,0 +1,854 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "landscape",
+  "label": "Manzara",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "alpine-clear",
+      "name": "Alpine Clear",
+      "category": "landscape",
+      "description": "Berrak hava hissi: soguk mavi gokyuzu, net ayrinti.",
+      "intent": "Dag, kar, yuksek irtifa",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "69ef102ce76d",
+            "params": {
+              "kelvin": 6401.5,
+              "tint": -4.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "faab6f5ba575",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 16.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 22.0,
+              "blue_lum": -12.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "4fde6ce13c99",
+            "params": {
+              "amount": 28.0,
+              "radius": 85.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "e61f8b675880",
+            "params": {
+              "black": 8.0,
+              "white": 6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "forest-depth",
+      "name": "Forest Depth",
+      "category": "landscape",
+      "description": "Yesil ayrimi: yapraklar koyulasir ve doygunlasir, golgeler yosun yesiline caler.",
+      "intent": "Orman, yesillik",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "9167dd7d9ecd",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": -18.0,
+              "yellow_sat": 14.0,
+              "yellow_lum": 0.0,
+              "green_hue": -10.0,
+              "green_sat": 38.0,
+              "green_lum": -22.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 16.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "33f333b9d850",
+            "params": {
+              "shadow_color": [
+                0.36,
+                0.54,
+                0.42
+              ],
+              "shadow_amount": 44.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.52,
+                0.54,
+                0.46
+              ],
+              "highlight_amount": 18.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "e5d8df882416",
+            "params": {
+              "amount": 20.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "5fcc739da988",
+            "params": {
+              "amount": 24.0,
+              "radius": 70.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "desert-gold",
+      "name": "Desert Gold",
+      "category": "landscape",
+      "description": "Kum ve kaya tonlarini bakira cevirir; gokyuzu derinlesir.",
+      "intent": "Col, kum, kaya",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "726693677441",
+            "params": {
+              "kelvin": 7971.7,
+              "tint": 10.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "72c790e015f2",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 24.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 18.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": -16.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "81e93d3dd32c",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.62,
+                0.54,
+                0.4
+              ],
+              "highlight_amount": 30.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "78cf4981e6eb",
+            "params": {
+              "amount": 22.0,
+              "radius": 90.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "ocean-blue",
+      "name": "Ocean Blue",
+      "category": "landscape",
+      "description": "Berrak su: mavi ve turkuaz belirgin doygunlukta, yesiller geri cekilir.",
+      "intent": "Deniz, kiyi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "401fb6f17cea",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": -12.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": -22.0,
+              "green_lum": 0.0,
+              "aqua_hue": -12.0,
+              "aqua_sat": 40.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 44.0,
+              "blue_lum": 6.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "6ab088772677",
+            "params": {
+              "shadows": 10.0,
+              "highlights": -24.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "b697351937ef",
+            "params": {
+              "amount": 14.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "d51ff094c5c5",
+            "params": {
+              "amount": 24.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "ef8f3c8b4e4f",
+            "params": {
+              "amount": -12.0,
+              "midpoint": 0.75,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "autumn-copper",
+      "name": "Autumn Copper",
+      "category": "landscape",
+      "description": "Sari ve turuncuyu bakira tasir; yesilleri geri ceker.",
+      "intent": "Sonbahar",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "3a71fe932846",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 26.0,
+              "orange_lum": 0.0,
+              "yellow_hue": -18.0,
+              "yellow_sat": 22.0,
+              "yellow_lum": 0.0,
+              "green_hue": 14.0,
+              "green_sat": -20.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "4abf5a044c3a",
+            "params": {
+              "kelvin": 7681.8,
+              "tint": 6.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "c5394363fe6a",
+            "params": {
+              "amount": 16.0,
+              "pivot": 0.46630001068115234
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "misty-hills",
+      "name": "Misty Hills",
+      "category": "landscape",
+      "description": "Soguk mavi-gri sis: uzak katmanlar aciir, yesiller sakinlesir.",
+      "intent": "Sisli manzara",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "light.diffusion",
+            "instance": "14f62ddd8e1a",
+            "params": {
+              "strength": 34.0,
+              "radius": 110.0,
+              "lift": 30.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "03df70c8d163",
+            "params": {
+              "shadow_color": [
+                0.4,
+                0.48,
+                0.62
+              ],
+              "shadow_amount": 40.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.48,
+                0.52,
+                0.58
+              ],
+              "highlight_amount": 26.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "05e82e7913c8",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": -24.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 8.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "924b4f894cfd",
+            "params": {
+              "lift": 18.0,
+              "rolloff": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "bcc0ac2d51c9",
+            "params": {
+              "amount": -16.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "e0e89d7828ef",
+            "params": {
+              "shadows": 0.0,
+              "highlights": -22.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "sunset-drama",
+      "name": "Sunset Drama",
+      "category": "landscape",
+      "description": "Gokyuzu renklerini guclendirir, on plani koyultur.",
+      "intent": "Gun batimi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.curves",
+            "instance": "a599e783cd64",
+            "params": {
+              "rgb": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.3,
+                  0.24
+                ],
+                [
+                  0.72,
+                  0.8
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "red": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "green": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "blue": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  1.0
+                ]
+              ],
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "e3b77d7c1704",
+            "params": {
+              "shadow_color": [
+                0.4,
+                0.44,
+                0.58
+              ],
+              "shadow_amount": 28.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.66,
+                0.48,
+                0.36
+              ],
+              "highlight_amount": 38.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "4d125b23751a",
+            "params": {
+              "amount": 26.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "54fbe604963a",
+            "params": {
+              "amount": -22.0,
+              "midpoint": 0.62,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "winter-light",
+      "name": "Winter Light",
+      "category": "landscape",
+      "description": "Soguk ve acik; karin mavi golgelerini korur.",
+      "intent": "Kis, kar",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "ff834f3dafef",
+            "params": {
+              "kelvin": 5868.1,
+              "tint": -6.0
+            }
+          },
+          {
+            "op": "tone.shadows_highlights",
+            "instance": "0b333e339c3d",
+            "params": {
+              "shadows": 22.0,
+              "highlights": -24.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "582d66b20ff5",
+            "params": {
+              "amount": -12.0
+            }
+          },
+          {
+            "op": "tone.black_white_point",
+            "instance": "25530c927c97",
+            "params": {
+              "black": 2.0,
+              "white": 8.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "emerald-valley",
+      "name": "Emerald Valley",
+      "category": "landscape",
+      "description": "Zumrut yesili vurgusu ve zengin orta ton.",
+      "intent": "Yesil vadi, tarla",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "d990137555b8",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 0.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 14.0,
+              "yellow_lum": 0.0,
+              "green_hue": -10.0,
+              "green_sat": 28.0,
+              "green_lum": 6.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 0.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "67d370060eb9",
+            "params": {
+              "shadow_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "shadow_amount": 0.0,
+              "midtone_color": [
+                0.46,
+                0.55,
+                0.48
+              ],
+              "midtone_amount": 24.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "detail.clarity",
+            "instance": "ffe967e3efe3",
+            "params": {
+              "amount": 18.0,
+              "radius": 75.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "1060650eaa5c",
+            "params": {
+              "amount": 16.0,
+              "protect_skin": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "earth-tones",
+      "name": "Earth Tones",
+      "category": "landscape",
+      "description": "Toprak paleti: kahve, oker ve zeytin tonlari one cikar.",
+      "intent": "Toprak, kirsal",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.hsl",
+            "instance": "855ec60b1f13",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 12.0,
+              "orange_lum": 0.0,
+              "yellow_hue": -14.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": -18.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -22.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "399575eb82f3",
+            "params": {
+              "amount": -8.0
+            }
+          },
+          {
+            "op": "color.split_tone",
+            "instance": "bd5abadf5474",
+            "params": {
+              "shadow_color": [
+                0.36,
+                0.33,
+                0.28
+              ],
+              "shadow_strength": 24.0,
+              "highlight_color": [
+                0.88,
+                0.82,
+                0.7
+              ],
+              "highlight_strength": 22.0,
+              "balance": 0.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

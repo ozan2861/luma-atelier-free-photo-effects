@@ -1,0 +1,724 @@
+{
+  "version": 2,
+  "app_version": "0.1.0",
+  "category": "analog",
+  "label": "Analog ve vintage",
+  "presets": [
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "faded-print",
+      "name": "Faded Print",
+      "category": "analog",
+      "description": "Zamanla solmus baski: siyahlar kalkik, renk zayif.",
+      "intent": "Eski baski taramasi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.fade",
+            "instance": "a6028b5ee395",
+            "params": {
+              "lift": 34.0,
+              "rolloff": 20.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "fde8f8c98318",
+            "params": {
+              "amount": -26.0
+            }
+          },
+          {
+            "op": "color.split_tone",
+            "instance": "b16294f38f16",
+            "params": {
+              "shadow_color": [
+                0.46,
+                0.44,
+                0.38
+              ],
+              "shadow_strength": 30.0,
+              "highlight_color": [
+                0.94,
+                0.88,
+                0.76
+              ],
+              "highlight_strength": 28.0,
+              "balance": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "19238c3a2d76",
+            "params": {
+              "amount": 20.0,
+              "size": 2.6,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "warm-negative",
+      "name": "Warm Negative",
+      "category": "analog",
+      "description": "Sicak negatif karakteri: yumusak omuz, kehribar parlak alan.",
+      "intent": "35 mm sicak negatif",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "8bc358473d1c",
+            "params": {
+              "toe": 38.0,
+              "shoulder": 48.0,
+              "pivot": 0.45,
+              "strength": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "68f46f177f4c",
+            "params": {
+              "kelvin": 8802.1,
+              "tint": 14.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "80a292e193bb",
+            "params": {
+              "shadow_color": [
+                0.54,
+                0.48,
+                0.42
+              ],
+              "shadow_amount": 28.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.7,
+                0.55,
+                0.36
+              ],
+              "highlight_amount": 44.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "f80c7a147548",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": 20.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 0.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": -24.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "bf9ed78f53c9",
+            "params": {
+              "amount": 26.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "cool-negative",
+      "name": "Cool Negative",
+      "category": "analog",
+      "description": "Serin negatif: mavi golgeler, kontrollu kontrast.",
+      "intent": "35 mm serin negatif",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "film.tone_curve",
+            "instance": "0a746e5efe7f",
+            "params": {
+              "toe": 26.0,
+              "shoulder": 34.0,
+              "pivot": 0.45,
+              "strength": 20.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.white_balance",
+            "instance": "903418e9aac1",
+            "params": {
+              "kelvin": 5029.8,
+              "tint": -16.0
+            }
+          },
+          {
+            "op": "color.grading",
+            "instance": "b6efc573ec5f",
+            "params": {
+              "shadow_color": [
+                0.34,
+                0.46,
+                0.66
+              ],
+              "shadow_amount": 46.0,
+              "midtone_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "midtone_amount": 0.0,
+              "highlight_color": [
+                0.48,
+                0.52,
+                0.58
+              ],
+              "highlight_amount": 24.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.hsl",
+            "instance": "008dfb2b620c",
+            "params": {
+              "red_hue": 0.0,
+              "red_sat": 0.0,
+              "red_lum": 0.0,
+              "orange_hue": 0.0,
+              "orange_sat": -22.0,
+              "orange_lum": 0.0,
+              "yellow_hue": 0.0,
+              "yellow_sat": 0.0,
+              "yellow_lum": 0.0,
+              "green_hue": 0.0,
+              "green_sat": 0.0,
+              "green_lum": 0.0,
+              "aqua_hue": 0.0,
+              "aqua_sat": 16.0,
+              "aqua_lum": 0.0,
+              "blue_hue": 0.0,
+              "blue_sat": 22.0,
+              "blue_lum": 0.0,
+              "purple_hue": 0.0,
+              "purple_sat": 0.0,
+              "purple_lum": 0.0,
+              "magenta_hue": 0.0,
+              "magenta_sat": 0.0,
+              "magenta_lum": 0.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "6c243b276c32",
+            "params": {
+              "amount": 24.0,
+              "size": 2.2,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "instant-memory",
+      "name": "Instant Memory",
+      "category": "analog",
+      "description": "Aninda film: dusuk kontrast, kayik renk, kose karartmasi.",
+      "intent": "Aninda kamera baskisi",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "tone.fade",
+            "instance": "0d20341e641a",
+            "params": {
+              "lift": 30.0,
+              "rolloff": 18.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "style.cross_process",
+            "instance": "ae4c4a136dbc",
+            "params": {
+              "strength": 34.0,
+              "shadow_shift": -18.0,
+              "saturation": 10.0,
+              "amount": 70.0
+            }
+          },
+          {
+            "op": "lens.vignette",
+            "instance": "fd58377d7549",
+            "params": {
+              "amount": -26.0,
+              "midpoint": 0.55,
+              "feather": 0.7,
+              "roundness": 0.0,
+              "center_x": 0.5,
+              "center_y": 0.5
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "0ec8f6d8a789",
+            "params": {
+              "amount": 18.0,
+              "size": 3.0,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "retro-summer",
+      "name": "Retro Summer",
+      "category": "analog",
+      "description": "70'ler tatil kartpostali: sicak, doygun, hafif sizintili.",
+      "intent": "Tatil, yaz",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.white_balance",
+            "instance": "3200f33a0efc",
+            "params": {
+              "kelvin": 8125.0,
+              "tint": 8.0
+            }
+          },
+          {
+            "op": "color.vibrance",
+            "instance": "13269ba7817c",
+            "params": {
+              "amount": 26.0,
+              "protect_skin": true
+            }
+          },
+          {
+            "op": "texture.light_leak",
+            "instance": "c5771a044c77",
+            "params": {
+              "intensity": 26.0,
+              "color": [
+                1.0,
+                0.62,
+                0.28
+              ],
+              "size": 0.7,
+              "softness": 70.0,
+              "seed": 3,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "6f0da2c4e9c2",
+            "params": {
+              "lift": 16.0,
+              "rolloff": 8.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "dusty-archive",
+      "name": "Dusty Archive",
+      "category": "analog",
+      "description": "Tozlu arsiv kutusu hissi: benekler, cizikler, soluk renk.",
+      "intent": "Arsiv, eski belge",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.dust",
+            "instance": "cd6838c80f08",
+            "params": {
+              "dust": 38.0,
+              "scratches": 26.0,
+              "dust_size": 3.5,
+              "dark_ratio": 55.0,
+              "seed": 2,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "21f7a31c0dd4",
+            "params": {
+              "amount": -30.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "08fdee0c54eb",
+            "params": {
+              "lift": 24.0,
+              "rolloff": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.paper",
+            "instance": "6110e658ee3f",
+            "params": {
+              "strength": 26.0,
+              "scale": 5.0,
+              "fibre": 50.0,
+              "warmth": 24.0,
+              "seed": 4,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "sepia-paper",
+      "name": "Sepia Paper",
+      "category": "analog",
+      "description": "Sepya baski: tek renk ton, kagit dokusu.",
+      "intent": "Portre, eski fotograf",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.monochrome",
+            "instance": "58fc72bfa16a",
+            "params": {
+              "red": 0.0,
+              "orange": 14.0,
+              "yellow": 10.0,
+              "green": 0.0,
+              "aqua": 0.0,
+              "blue": 0.0,
+              "purple": 0.0,
+              "magenta": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.split_tone",
+            "instance": "bac7ff67f3b5",
+            "params": {
+              "shadow_color": [
+                0.32,
+                0.26,
+                0.18
+              ],
+              "shadow_strength": 46.0,
+              "highlight_color": [
+                0.96,
+                0.88,
+                0.7
+              ],
+              "highlight_strength": 42.0,
+              "balance": 0.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.paper",
+            "instance": "9c5292aa2e80",
+            "params": {
+              "strength": 32.0,
+              "scale": 6.0,
+              "fibre": 50.0,
+              "warmth": 34.0,
+              "seed": 4,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "4c3c334357ff",
+            "params": {
+              "amount": 18.0,
+              "size": 2.4,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "cross-process-look",
+      "name": "Cross Process",
+      "category": "analog",
+      "description": "Yanlis banyo kimyasi: yesil golge, sari parlak alan.",
+      "intent": "Yaratici, moda",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "style.cross_process",
+            "instance": "18942d9d7ab6",
+            "params": {
+              "strength": 78.0,
+              "shadow_shift": -24.0,
+              "saturation": 22.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "b2a7ad3f0a60",
+            "params": {
+              "amount": 18.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "34d2809a67b3",
+            "params": {
+              "amount": 14.0,
+              "size": 2.0,
+              "roughness": 45.0,
+              "colour": false,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "washed-90s",
+      "name": "Washed 90s",
+      "category": "analog",
+      "description": "Yikanmis 90'lar rengi: dusuk doygunluk, magenta kayma.",
+      "intent": "90'lar aile albumu",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "color.grading",
+            "instance": "b6dbd5de1fe9",
+            "params": {
+              "shadow_color": [
+                0.48,
+                0.48,
+                0.52
+              ],
+              "shadow_amount": 20.0,
+              "midtone_color": [
+                0.56,
+                0.48,
+                0.54
+              ],
+              "midtone_amount": 26.0,
+              "highlight_color": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "highlight_amount": 0.0,
+              "balance": 0.0,
+              "preserve_luma": true,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "29a10a6922c4",
+            "params": {
+              "amount": -20.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "7a65b0af3014",
+            "params": {
+              "lift": 26.0,
+              "rolloff": 14.0,
+              "amount": 100.0
+            }
+          },
+          {
+            "op": "texture.grain",
+            "instance": "6c20d24d0272",
+            "params": {
+              "amount": 22.0,
+              "size": 2.8,
+              "roughness": 45.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "app_version": "0.1.0",
+      "id": "grainy-diary",
+      "name": "Grainy Diary",
+      "category": "analog",
+      "description": "Yuksek ISO gunluk hissi: belirgin tane, orta kontrast.",
+      "intent": "Gunluk, belgesel",
+      "tags": [],
+      "default_intensity": 100.0,
+      "recipe": {
+        "version": 2,
+        "app_version": "0.1.0",
+        "seed": 1,
+        "layers": [
+          {
+            "op": "texture.grain",
+            "instance": "baca87dfc77c",
+            "params": {
+              "amount": 52.0,
+              "size": 2.6,
+              "roughness": 62.0,
+              "colour": true,
+              "shadow_weight": 70.0,
+              "highlight_weight": 45.0,
+              "seed": 1
+            }
+          },
+          {
+            "op": "tone.contrast",
+            "instance": "618eca36f906",
+            "params": {
+              "amount": 14.0,
+              "pivot": 0.46630001068115234
+            }
+          },
+          {
+            "op": "color.saturation",
+            "instance": "0510ee2a8410",
+            "params": {
+              "amount": -12.0
+            }
+          },
+          {
+            "op": "tone.fade",
+            "instance": "8adbe5f3c895",
+            "params": {
+              "lift": 14.0,
+              "rolloff": 0.0,
+              "amount": 100.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
