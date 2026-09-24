@@ -1,0 +1,29 @@
+# Otomatik uretildi: tools/make_version_info.py
+# Elle duzenlemeyin; surum core/branding.py icindedir.
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(0, 1, 0, 0),
+    prodvers=(0, 1, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable(
+        '041F04B0',
+        [StringStruct('CompanyName', 'Luma Atelier'),
+         StringStruct('FileDescription', 'Luma Atelier - Fotoğraf efekt studyosu'),
+         StringStruct('FileVersion', '0.1.0'),
+         StringStruct('InternalName', 'LumaAtelier'),
+         StringStruct('LegalCopyright', 'Luma Atelier'),
+         StringStruct('OriginalFilename', 'LumaAtelier.exe'),
+         StringStruct('ProductName', 'Luma Atelier'),
+         StringStruct('ProductVersion', '0.1.0')])
+    ]),
+    VarFileInfo([VarStruct('Translation', [1055, 1200])])
+  ]
+)

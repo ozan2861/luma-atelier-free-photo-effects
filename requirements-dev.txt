@@ -1,0 +1,8 @@
+# Gelistirme ve paketleme araclari
+-r requirements.txt
+-r requirements-security.txt
+
+pyinstaller==6.14.1
+pytest==9.0.3
+pytest-qt==4.4.0
+setuptools==83.0.0
